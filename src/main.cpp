@@ -438,7 +438,6 @@ void loop()
     doConnect = false;
   }
 
-  mqttLoop();
   //request battery ever x sec
   if (batterycounter < 1)
   {
@@ -446,5 +445,6 @@ void loop()
     batterycounter = 10;
   }
   batterycounter--;
-  delay(10000); // Delay a second between loops.
+  delay(50000); // Delay 5 seconds between loops.
+  mqttLoop();
 }
