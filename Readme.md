@@ -4,19 +4,19 @@ an ESP32 Based iBBQ (Inkbird) BLE to MQTT Gateway. This is an fork of runningtoy
 
 ## Requirements
 
-Wemos Lolin 32 (or other ESP32 Boards)
-MS Visual Studio Code with PlatformIO
-Domoticz with configured MQTT Client Gateway with LAN interface
-an Inkbird IBT Thermometer
+* Wemos Lolin 32 (or other ESP32 Boards)
+* MS Visual Studio Code with PlatformIO
+* Domoticz with configured MQTT Client Gateway with LAN interface
+* an Inkbird IBT Thermometer
 
 ## Usage
 
-In Domoticz:
+* In Domoticz:
 Create new virtual Temperature Devices (in ascending IDX order) for each [possible] Probe.
 eg. IBT-2x --> 2 virtuel Temp Devices
 Create new virtual Percentage Device for the Battery Level
 
-In VSCode:
+* In VSCode:
 Before Flashing create/edit the "src/credentials.h" and "src/domoticz.h". 
 You can find the example files in the directory.
 
